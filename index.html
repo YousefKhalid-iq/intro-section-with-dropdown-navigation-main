@@ -2,38 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style/main.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
+  <div class="header-cont">
+    <div class="global-header">
+      <div class="logo-header">
+        <img src="/images/logo.svg" alt="" role="presentation">
+      </div>
+      <div class="nav-bar-cont">
+        <div class="open-btn">
+          <img class="hamburger-icon" src="/images/icon-menu.svg" alt="button">
+        </div>
+        <div class="close-btn">
+          <img class="close-icon" src="/images/icon-close-menu.svg" alt="button">
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar-content">
+      <div class="features-cont">
+        <a id="features" href="#">Features<img class="arrow-icon" src="/images/icon-arrow-down.svg" alt="" role="presentation"></a>
+        <ul class="features-list">
+          <li><img class="side-icons" src="/images/icon-todo.svg" alt="" role="presentation"><a href="#"><a href="#">Todo List</a></li>
+          <li><img class="side-icons" src="/images/icon-calendar.svg" alt="" role="presentation"><a href="#">Calendar</a></li>
+          <li><img class="side-icons" src="/images/icon-reminders.svg" alt="" role="presentation"><a href="#">Reminders</a></li>
+          <li><img class="side-icons" src="/images/icon-planning.svg" alt="" role="presentation"><a href="#">Planning</a></li>
+        </ul>
+      </div>
+      <div class="company-cont">
+        <a id="company" href="#">Company<img class="arrow-icon" src="/images/icon-arrow-down.svg" alt="" role="presentation"></a>
+        <ul class="company-list">
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <a class="carriers" href="#">Careers</a>
+      <a class="about" href="#">About</a>
+      <div class="nav-btn-cont">
+        <button class="login-btn">
+          Login
+        </button>
+        <button class="register-btn"> 
+          Register
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-img-cont">
+    <img class ="mobile-img" src="/images/image-hero-mobile.png" alt="an image showcasing the product">
+  </div>
+  <div class="main-content">
+    <h1>
+      Make remote work
+    </h1>
+    <p class="main-p">
+      Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.
+    </p>
+    <button class="main-btn">
+      Learn more
+    </button>
+  </div>
+  <div class="sponsers-cont">
+    <img src="/images/client-databiz.svg" alt="" role="presentation">
+    <img src="/images/client-audiophile.svg" alt="" role="presentation">
+    <img src="/images/client-meet.svg" alt="" role="presentation">
+    <img src="/images/client-maker.svg" alt="" role="presentation">
+  </div>
+  <div class="desktop-img-cont">
+    <img class="desktop-img" src="/images/image-hero-desktop.png" alt="an image showcasing the product">
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/YousefKhalid-iq/intro-section-with-dropdown-navigation-main">Yousef Khalid</a>.
   </div>
 </body>
 </html>
