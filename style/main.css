@@ -12,6 +12,7 @@
 
 body {
   font-family: "Epilogue", sans-serif;
+  padding-top: 25px;
 }
 
 a {
@@ -26,17 +27,22 @@ ul {
 .global-header {
   display: flex;
   justify-content: space-between;
-  margin: 25px 15px 20px 15px;
+  margin: 0px 15px;
+}
+
+.open-btn {
+  display: block;
 }
 
 .close-btn {
-  position: absolute;
   display: none;
-  z-index: 2;
 }
 
 .mobile-img {
-  width: 375px;
+  width: 100%;
+  height: 320px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hamburger-icon {
@@ -44,30 +50,40 @@ ul {
   height: 20px;
   opacity: 0.9;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin: 0 18px;
 }
 
 .close-icon {
+  position: absolute;
   width: 30px;
   opacity: 0.9;
   cursor: pointer;
+  right: 0;
+  top: 5;
+  z-index: 2;
+  margin: 0 20px;
 }
 
 .header-links-cont {
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
 }
 
 .nav-bar-content {
   background-color: hsl(0deg, 0%, 98%);
   flex-direction: column;
-  width: 65%;
+  width: 0;
   height: 100%;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
-  opacity: 0.9;
-  display: none;
+  visibility: hidden;
   z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .features-cont {
@@ -78,12 +94,18 @@ ul {
   padding: 5px 20px 10px 20px;
 }
 
-.arrow-icon {
+.arrow-icon, .arrow-icon2 {
   margin: 0 12px;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
 }
 
 .features-list, .company-list {
-  margin: 20px 40px 15px 40px;
+  margin: 15px 40px 5px 40px;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .features-list li {
@@ -105,6 +127,35 @@ ul {
 .nav-btn-cont {
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+}
+
+.press {
+  visibility: visible;
+  width: 65%;
+}
+
+.press2 {
+  display: block;
+}
+
+.press3 {
+  display: none;
+}
+
+.press4 {
+  opacity: 1;
+}
+
+.press5 {
+  visibility: visible;
+  height: 100%;
+  opacity: 1;
+}
+
+.press6 {
+  transform: rotate(180deg);
 }
 
 .login-btn, .register-btn {
@@ -140,7 +191,7 @@ h1 {
 
 .main-p {
   color: hsl(0deg, 0%, 41%);
-  width: 90%;
+  width: 350px;
   margin: 0 auto;
   line-height: 1.5rem;
 }
@@ -180,8 +231,9 @@ h1 {
 .attribution a {
   color: hsl(0deg, 0%, 8%);
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .attribution a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
