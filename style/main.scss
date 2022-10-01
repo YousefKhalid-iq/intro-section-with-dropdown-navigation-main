@@ -41,6 +41,7 @@ ul {
 .close-btn {
   position: absolute;
   display: none;
+  z-index: 2;
 }
 
 .mobile-img {
@@ -60,16 +61,22 @@ ul {
   cursor: pointer;
 }
 
-.nav-bar-content {
-  background-color: $almost-white;
+.header-links-cont {
   display: flex;
   flex-direction: column;
-  width: 0;
+}
+
+.nav-bar-content {
+  background-color: $almost-white;
+  flex-direction: column;
+  width: 65%;
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
   opacity: 0.9;
+  display: none;
+  z-index: 1;
 }
 
 .features-cont {
@@ -160,11 +167,30 @@ h1 {
   cursor: pointer;
 }
 
+.sponsers-cont {
+  width: 360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsers-cont img {
+  width: 70px;
+}
+
 .attribution { 
   font-size: 11px; 
-  text-align: center; 
+  text-align: center;
+  margin-top: 15px; 
+  color: $medium-grey;
 }
 
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: $almost-black; 
+  font-weight: 700;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
 }
