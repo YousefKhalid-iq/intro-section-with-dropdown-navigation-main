@@ -1,4 +1,5 @@
-// opening and closing the nav bar (and showing the navbar content)
+// opening and closing the nav bar (and showing the navbar content) +
+// Adding a shadow effect after opening the nav bar
 
 const openBtn = document.querySelector('.hamburger-icon');
 const openCont = document.querySelector('.open-btn');
@@ -7,45 +8,27 @@ const closeCont = document.querySelector('.close-btn');
 const navBar = document.querySelector('.nav-bar-content');
 const headerLinks = document.querySelector('.header-links-cont');
 const navBtn = document.querySelector('.nav-btn-cont');
+const darkOverlay = document.querySelector('.dark-cont');
+const mobileImg = document.querySelector('.mobile-img');
 
 openBtn.addEventListener("click", function() {
   navBar.classList.toggle("press");
-});
-
-openBtn.addEventListener("click", function() {
   closeCont.classList.toggle("press2");
-});
-
-openBtn.addEventListener("click", function() {
   openCont.classList.toggle("press3");
-});
-
-openBtn.addEventListener("click", function() {
   headerLinks.classList.toggle("press4");
-});
-
-openBtn.addEventListener("click", function() {
   navBtn.classList.toggle("press4");
+  darkOverlay.classList.toggle("oof");
+  mobileImg.classList.toggle("ooof");
 });
 
 closeBtn.addEventListener("click", function() {
   navBar.classList.toggle("press");
-});
-
-closeBtn.addEventListener("click", function() {
   closeCont.classList.toggle("press2");
-});
-
-closeBtn.addEventListener("click", function() {
   openCont.classList.toggle("press3");
-});
-
-closeBtn.addEventListener("click", function() {
   headerLinks.classList.toggle("press4");
-});
-
-closeBtn.addEventListener("click", function() {
   navBtn.classList.toggle("press4");
+  darkOverlay.classList.toggle("oof");
+  mobileImg.classList.toggle("ooof");
 });
 
 // Navigating the features and company drop down menus
@@ -66,5 +49,3 @@ company.addEventListener("click", function() {
   companyList.classList.toggle("press5");
   arrowIcon2.classList.toggle("press6");
 });
-
-// Adding a shadow effect after opening the nav bar

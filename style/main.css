@@ -15,6 +15,26 @@ body {
   padding-top: 25px;
 }
 
+.dark-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.oof {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.ooof {
+  filter: brightness(60%);
+}
+
 a {
   text-decoration: none;
   color: hsl(0deg, 0%, 41%);

@@ -13,7 +13,7 @@ $medium-grey: hsl(0, 0%, 41%);
 $almost-black: hsl(0, 0%, 8%);
 $main-font: "Epilogue", sans-serif;
 $full-bright: rgba(255, 255, 255, 1);
-$full-dark: rgba(0, 0, 0, 0.40);
+$full-dark: rgba(0, 0, 0, 0.60);
 
 * {
   margin: 0;
@@ -24,6 +24,26 @@ $full-dark: rgba(0, 0, 0, 0.40);
 body {
   font-family: "Epilogue", sans-serif;
   padding-top: 25px;
+}
+
+.dark-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $full-bright;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.oof {
+  background: $full-dark;
+}
+
+.ooof {
+  filter: brightness(60%);
 }
 
 a {
