@@ -17,8 +17,8 @@ openBtn.addEventListener("click", function() {
   openCont.classList.toggle("press3");
   headerLinks.classList.toggle("press4");
   navBtn.classList.toggle("press4");
-  darkOverlay.classList.toggle("oof");
-  mobileImg.classList.toggle("ooof");
+  darkOverlay.classList.toggle("dark-on");
+  mobileImg.classList.toggle("dark-on-bg");
 });
 
 closeBtn.addEventListener("click", function() {
@@ -27,8 +27,8 @@ closeBtn.addEventListener("click", function() {
   openCont.classList.toggle("press3");
   headerLinks.classList.toggle("press4");
   navBtn.classList.toggle("press4");
-  darkOverlay.classList.toggle("oof");
-  mobileImg.classList.toggle("ooof");
+  darkOverlay.classList.toggle("dark-on");
+  mobileImg.classList.toggle("dark-on-bg");
 });
 
 // Navigating the features and company drop down menus
