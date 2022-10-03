@@ -31,6 +31,14 @@ closeBtn.addEventListener("click", function() {
   mobileImg.classList.toggle("dark-on-bg");
 });
 
+// Removing the shadow effect on desktop mode 
+
+let desktopWidth = window.matchMedia("(min-width: 1024px)");
+
+if(desktopWidth.matches) {
+  darkOverlay.classList.toggle("bright-on");
+}
+
 // Navigating the features and company drop down menus
 
 const features = document.getElementById('features');
